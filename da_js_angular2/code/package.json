@@ -1,0 +1,22 @@
+{
+  "name": "angular2-demo-todo-app",
+  "version": "1.0.0",
+  "description": "Small TodoApp written in Angular with TypeScript and used for demo purposes in a presentation",
+  "author": "JSperts <info@jsperts.de> (https://jsperts.de)",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "tsc --module 'commonjs' --target 'es5' --emitDecoratorMetadata --experimentalDecorators --sourceMap --rootDir './src'  ./**/*.ts",
+    "postbuild": "npm run start",
+    "start": "http-server ./ -c-1"
+  },
+  "dependencies": {
+    "angular2": "2.0.0-alpha.36",
+    "systemjs": "0.18.17",
+    "typescript": "1.5.3"
+  },
+  "devDependencies": {
+    "http-server": "0.8.0"
+  },
+  "private": true
+}

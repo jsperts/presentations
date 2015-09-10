@@ -1,0 +1,51 @@
+body {
+  background-color: #cccccc;
+}
+
+todo-app {
+  width: 30%;
+  margin: auto;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  height: 30px;
+  background-color: white;
+  margin-top: 2px;
+}
+
+todo-input {
+  width: 100%;
+  display: block;
+}
+
+input[type=text] {
+  width: 68%;
+  height: 30px;
+}
+
+button {
+  width: 30%;
+  height: 30px;
+  float: right;
+}
+
+todo-item {
+  height: 30px;
+  display: block;
+}
+
+input[type=checkbox] {
+  margin-top: 8px;
+}
+
+.error {
+  border-color: red;
+}

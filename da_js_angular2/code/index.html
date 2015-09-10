@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Todo App</title>
+  <link href="src/styles/todo_app.css" rel="stylesheet"/>
+  </head>
+<body>
+<todo-app>Loading...</todo-app>
+<script src="libs/traceur-runtime.min.js"></script>
+<script src="node_modules/systemjs/dist/system.src.js"></script>
+<script src="node_modules/angular2/bundles/angular2.js"></script>
+<script>
+  // add .js for files under src as we can not include .js in the import because typescript does not understand it
+  System.config({
+    packages: {
+      'src': {
+        defaultExtension: 'js'
+      }
+    }
+  });
+  System.import('src/components/todo_app/todo_app');
+</script>
+</body>
+</html>
