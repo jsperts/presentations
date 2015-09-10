@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "npm run build",
-    "build": "tsc --module 'commonjs' --target 'es5' --emitDecoratorMetadata --experimentalDecorators --sourceMap --rootDir './src'  ./**/*.ts",
+    "build": "tsc --module 'commonjs' --target 'es5' --emitDecoratorMetadata --experimentalDecorators --sourceMap ./src/components/todo_app/todo_app.ts || exit 0",
     "postbuild": "npm run start",
     "start": "http-server ./ -c-1"
   },
